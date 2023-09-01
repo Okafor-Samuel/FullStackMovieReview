@@ -15,12 +15,5 @@ public class MovieApiApplication {
         SpringApplication.run(MovieApiApplication.class, args);
     }
 
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-    @Document(collection = "reviews")
-    public static class Review {
-        private ObjectId id;
-        private String reviewBody;
-    }
+
 }
