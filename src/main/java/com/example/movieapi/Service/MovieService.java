@@ -16,7 +16,7 @@ public class MovieService {
     public List<Movie> allMovies(){
         return movieRepository.findAll();
     }
-    public Movie singleMovie(ObjectId id){
-        return movieRepository.findById(id).orElseThrow(()-> new MovieNotFoundException("Movie with id "+id+" not found"));
+    public Movie singleMovie(String imdbId){
+        return movieRepository.findByImdbId(imdbId).orElseThrow(()-> new MovieNotFoundException("Movie with id "+imdbId+" not found"));
     }
 }
