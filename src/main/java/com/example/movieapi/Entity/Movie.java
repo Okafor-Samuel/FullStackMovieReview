@@ -1,5 +1,6 @@
-package com.example.movieapi;
+package com.example.movieapi.Entity;
 
+import com.example.movieapi.MovieApiApplication;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,7 +25,7 @@ public class Movie {
     private List<String> genres;
     private List<String> backdrops;
     @DocumentReference
-    private List<Review> reviewIds;
+    private List<MovieApiApplication.Review> reviewIds;
 
 
 }
