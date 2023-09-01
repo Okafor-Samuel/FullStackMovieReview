@@ -29,4 +29,5 @@ public class CustomExceptionHandler {
         error.put("error", ex.getMessage());
         return error;
     }
+
 }
